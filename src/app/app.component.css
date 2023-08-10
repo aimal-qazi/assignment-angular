@@ -1,0 +1,17 @@
+.header {
+  width: 100%;
+  height: 80px;
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.header button {
+  padding: 10px 30px;
+  background: #444;
+  color: #fff;
+  border: 0;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="left">
+    <ul *ngFor="let item of product; let i = index">
+      <li *ngIf="item.rating > 4.5">
+        <h3 (click)="move1(i)">{{ item.title }}</h3>
+        <p (click)="move1(i)">{{ item.rating }} Rating</p>
+      </li>
+    </ul>
+  </div>
+  <div class="right">
+    <ul *ngFor="let item of side; let i = index">
+      <li *ngIf="item.rating > 4.5">
+        <div>
+          <h3 (click)="move2(i)">{{ item.title }}</h3>
+        </div>
+        <p (click)="move2(i)">{{ item.rating }} rating</p>
+      </li>
+    </ul>
+  </div>
+</div>
